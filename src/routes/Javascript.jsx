@@ -29,8 +29,8 @@ const Javascript = () => {
         <p><b>Let</b>: Introduzido no ECMAScript 6 (ES6). Escopo de bloco.</p>
         <p><b>Const</b>: Também introduzido no ES6. Similar ao let, mas a variável não pode ser.</p>
         <div>
-          <h4>Variavel var</h4>
-        <span className="textCode">Em JavaScript, a palavra-chave var é usada para declarar uma variável. Uma variável é como uma caixa de armazenamento que você pode usar para guardar valores. Aqui está um exemplo simples:</span>
+          <h5>Variavel var</h5>
+        <p className="textCode">Em JavaScript, a palavra-chave var é usada para declarar uma variável. Uma variável é como uma caixa de armazenamento que você pode usar para guardar valores. Aqui está um exemplo simples:</p>
         <div className="ide">
         <Codeide/>
         <CodeHighlighter language="javascript" 
@@ -42,7 +42,7 @@ const Javascript = () => {
           <li><b>=</b>: O operador de atribuição. Ele diz ao JavaScript para atribuir o valor à direita à variável à esquerda.</li>
           <li><b>10</b>: O valor que está sendo atribuído à variável.</li>
         </ul>
-        <span className="textCode">Depois de declarar a variável, você pode usá-la em seu código. Por exemplo:</span>
+        <p className="textCode">Depois de declarar a variável, você pode usá-la em seu código. Por exemplo:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -51,10 +51,10 @@ const Javascript = () => {
         <p>É importante mencionar que <b>var</b> tem algumas peculiaridades em comparação com outras formas de declarar variáveis em JavaScript, como <b>let</b> e <b>const</b>. Por exemplo, <b>var</b> é funcionalmente "elevado" para o topo do escopo em que foi declarado (isso é chamado de hoisting), o que pode levar a comportamentos inesperados. Em projetos mais modernos, geralmente é preferível usar <b>let</b> ou <b>const</b> em vez de <b>var</b>, pois essas palavras-chave têm um escopo mais previsível.</p>
       </div>
       <div>
-        <h4>Variavel let</h4>
+        <h5>Variavel let</h5>
         <p>A palavra-chave let em JavaScript é usada para declarar uma variável, assim como var. No entanto, let tem algumas diferenças importantes, especialmente em relação ao escopo.</p>
         <p>Diferentemente de var, let tem um escopo de bloco, o que significa que a variável só é visível dentro do bloco em que foi declarada.</p>
-        <span className="textCode">Aqui está um exemplo simples de como você pode usar let para declarar e atribuir uma variável:</span>
+        <p className="textCode">Aqui está um exemplo simples de como você pode usar let para declarar e atribuir uma variável:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -65,14 +65,49 @@ const Javascript = () => {
       <div id="tiposDeDados">
         <h3 className="tituloh3">TIPOS DE DADOS</h3>
         <div className="line"></div>
-        <h4>Tipos primitivos</h4>
+        <h4>TIPOS PRIMITIVOS</h4>
         <h5>Number</h5>
+        <p >Em JavaScript, o tipo de dado number é usado para representar valores numéricos, sejam eles inteiros ou de ponto flutuante (números decimais). Aqui estão algumas características importantes do tipo de dado number em JavaScript, juntamente com exemplos:</p>
+        <h6>Inteiros e Ponto Flutuante:</h6>
+        <p className="textCode">O tipo number em JavaScript pode representar tanto inteiros quanto números de ponto flutuante.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let inteiro = 42;          // Inteiro
+let decimal = 3.14;        // Ponto flutuante`}/>
+        </div>
+        <h6>Operações Aritméticas:</h6>   
+        <p className="textCode">Você pode realizar operações aritméticas com números em JavaScript.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let soma = 5 + 3;          // Soma
+let subtracao = 7 - 2;      // Subtração
+let multiplicacao = 4 * 6;  // Multiplicação
+let divisao = 8 / 2;        // Divisão`}/>
+        </div>
+        <h6>Infinity e NaN:</h6>
+        <p className="textCode">JavaScript inclui valores especiais como Infinity (infinito) e NaN (não é um número).</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let infinito = Infinity;
+let naoENumero = NaN;`}/>
+        </div>
+        <h6>Conversão de Tipos:</h6>
+        <p className="textCode">É possível converter outros tipos de dados para number usando funções como parseInt() ou parseFloat().</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let stringNumero = "42";
+let numeroConvertido = parseInt(stringNumero);`}/>
+        </div>
         <h5>String</h5>
         <h5>Boolean</h5>
         <h5>Undefined</h5>
         <h5>Null</h5>
         <h5>Symbol</h5>
-        <h4>Tipos Objetos</h4>
+        <h4>TIPOS OBJETOS</h4>
         <h5>Object</h5>
         <h5>Array</h5>
         <h5>Function</h5>
@@ -130,9 +165,9 @@ const Javascript = () => {
       <div id="arraysObjetos">
         <h3 className="tituloh3">ARRAYS E OBJETOS</h3>
         <div className="line"></div>
-        <h4>Arrays</h4>
+        <h5>Arrays</h5>
         <p>Um array é uma coleção ordenada de valores. Os valores podem ser de qualquer tipo, e cada elemento em um array é associado a um índice.</p>
-        <span className="textCode">Criando um Array:</span>
+        <p className="textCode">Criando um Array:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -140,21 +175,21 @@ const Javascript = () => {
 let numeros = [1, 2, 3, 4, 5];
 let misto = [1, 'maçã', true, { tipo: 'fruta' }];`}/>
         </div>
-        <span className="textCode">Acessando Elementos do Array:</span>
+        <p className="textCode">Acessando Elementos do Array:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
           code={`console.log(frutas[0]);  // 'maçã'
 console.log(numeros.length);  // 5`}/>
         </div>
-        <span className="textCode">Modificando Elementos do Array:</span>
+        <p className="textCode">Modificando Elementos do Array:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
           code={`frutas[1] = 'uva';
 frutas.push('abacaxi');  // Adiciona ao final do array`}/>
         </div>
-        <span className="textCode">Métodos Úteis de Array:</span>
+        <p className="textCode">Métodos Úteis de Array:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -166,9 +201,9 @@ numeros.push(2);  // Adiciona ao final
 numeros.shift();  // Remove o primeiro elemento
 numeros.unshift(8);  // Adiciona no início`}/>
         </div>
-        <h4>Objetos</h4>
+        <h5>Objetos</h5>
         <p>Um objeto é uma coleção de pares chave-valor, onde cada chave é uma string única que identifica um valor associado.</p>
-        <span className="textCode">Criando um Objeto:</span>
+        <p className="textCode">Criando um Objeto:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -182,7 +217,7 @@ numeros.unshift(8);  // Adiciona no início`}/>
       }
   };`}/>
         </div>
-        <span className="textCode">Acessando Propriedades do Objeto:</span>
+        <p className="textCode">Acessando Propriedades do Objeto:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -190,7 +225,7 @@ numeros.unshift(8);  // Adiciona no início`}/>
 console.log(pessoa['idade']);  // 25
 console.log(pessoa.endereco.cidade);  // 'Cidade Exemplo'`}/>
         </div>
-        <span className="textCode">Modificando Propriedades do Objeto:</span>
+        <p className="textCode">Modificando Propriedades do Objeto:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
@@ -198,13 +233,13 @@ console.log(pessoa.endereco.cidade);  // 'Cidade Exemplo'`}/>
 pessoa['idade'] = 30;
 pessoa.endereco.cidade = 'Nova Cidade';`}/>
         </div>
-        <span className="textCode">Adicionando Novas Propriedades:</span>
+        <p className="textCode">Adicionando Novas Propriedades:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
           code={`pessoa.profissao = 'Desenvolvedor';`}/>
         </div>
-        <span className="textCode">Métodos e Funções em Objetos:</span>
+        <p className="textCode">Métodos e Funções em Objetos:</p>
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
