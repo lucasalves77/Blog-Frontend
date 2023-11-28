@@ -17,10 +17,19 @@ const Javascript = () => {
         </details>
         <details>
           <summary>Tipos de dados</summary>
-          <a href="#number">Number</a>
-          <a href="#string">String</a>
-          <a href="#boolean">Boolean</a>
-          <a href="#undefined">Undefined</a>
+          <h6 className="sublist">Tipos primitivos</h6>
+            <a href="#number">Number</a>
+            <a href="#string">String</a>
+            <a href="#boolean">Boolean</a>
+            <a href="#undefined">Undefined</a>
+            <a href="#null">Null</a>
+            <a href="#symbol">Symbol</a>
+          <h6 className="sublist">Tipos objetos</h6>
+            <a href="#object">Object</a>
+            <a href="#array">Array</a>
+            <a href="#function">Function</a>
+            <a href="#date">Date</a>
+            <a href="#regexp">RegExp</a>
         </details>
         <details>
           <summary>Operadores</summary>
@@ -343,14 +352,37 @@ console.log(objeto.outraChave); // Saída: undefined`}/>
 
 
         </div>{/*-------Boolean-------*/}
-        <h5>Null</h5>
-        <h5>Symbol</h5>
+
+        {/*-------NULL-------*/}
+        <div id="null">
+          <h5>Null</h5>
+        </div>{/*-------null-------*/}
+        
+        {/*-------SYMBOL-------*/}
+        <div id="symbol">
+          <h5>Symbol</h5>
+        </div>{/*-------symbol------*/}
+        
         <h4>TIPOS OBJETOS</h4>
-        <h5>Object</h5>
-        <h5>Array</h5>
-        <h5>Function</h5>
-        <h5>Date</h5>
-        <h5>RegExp</h5>
+        <div id="object">
+          <h5>Object</h5>
+        </div>
+        
+        <div id="array">
+          <h5>Array</h5>
+        </div>
+        
+        <div id="function">
+          <h5>Function</h5>
+        </div>
+        <div id="date">
+          <h5>Date</h5>
+        </div>
+
+        <div id="regexp">
+          <h5>RegExp</h5>
+        </div>
+        
       </div>
       <div id="operadores">
         <h3 className="tituloh3">OPERADORES</h3>

@@ -43,7 +43,9 @@ b{
 }
 
 .prefacio{
+  display: inline-block;
   padding: 20px 0;
+  width: auto;
 }
 
 summary{
@@ -61,12 +63,16 @@ details{
 details a{
   color: white;
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 45px;
 }
 
 details a:hover{
   color: white;
   text-decoration: underline;
+}
+
+.sublist{
+  margin-left: 30px;
 }
 
 .line{
