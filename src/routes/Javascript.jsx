@@ -65,7 +65,10 @@ const Javascript = () => {
       <div id="tiposDeDados">
         <h3 className="tituloh3">TIPOS DE DADOS</h3>
         <div className="line"></div>
-        <h4>TIPOS PRIMITIVOS</h4>
+        <h4>TIPOS PRIMITIVOS</h4> 
+
+        {/*----------NUMBER-----------*/}
+        <div className="number">
         <h5>Number</h5>
         <p >Em JavaScript, o tipo de dado number é usado para representar valores numéricos, sejam eles inteiros ou de ponto flutuante (números decimais). Aqui estão algumas características importantes do tipo de dado number em JavaScript, juntamente com exemplos:</p>
         <h6>Inteiros e Ponto Flutuante:</h6>
@@ -110,7 +113,11 @@ let numeroConvertido = parseInt(stringNumero);`}/>
           code={`let numeroPrimitivo = 42;
 let numeroObjeto = new Number(42);`}/>
         </div>
-        <h5>String</h5>
+        </div>{/*----------number-----------*/}
+
+        {/*----------STRING-----------*/}
+        <div className="string">
+          <h5>String</h5>
         <p>uma string é um tipo de dado que representa uma sequência de caracteres. As strings são usadas para armazenar e manipular texto. Elas podem conter letras, números, espaços, pontuações e outros caracteres.</p>
         <p className="textCode">Para declarar uma string em JavaScript, você pode usar aspas simples (') ou duplas ("). Aqui estão alguns exemplos:</p>
         <div className="ide">
@@ -170,9 +177,133 @@ console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "pod
           <CodeHighlighter language="javascript" 
           code={`let stringComAspas = 'Esta é uma string com aspas simples ('\').';`}/>
         </div>
-        <h5>Boolean</h5>
+        </div>{/*----------string-----------*/}
+        
+        {/*----------BOOLEAN-----------*/}
+        <div className="boolean">
+          <h5>Boolean</h5>
         <h6>Declaração de Variáveis Booleanas:</h6>
+        <p className="textCode">Você pode declarar variáveis booleanas atribuindo-lhes valores true ou false:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let isAtivo = true;
+let isAdmin = false;`}/>
+        </div>
+        <h6>Expressões Lógicas:</h6>
+        <p className="textCode">Operadores lógicos em JavaScript, como && (AND), || (OR) e ! (NOT), são frequentemente usados com valores booleanos para criar expressões lógicas complexas:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let idade = 20;
+let ehMaiorDeIdade = idade >= 18;
+let temPermissao = true;
+
+let podeEntrar = ehMaiorDeIdade && temPermissao;
+console.log(podeEntrar); // Saída: true (se ambas as condições forem verdadeiras)`}/>
+        </div>
+        <h6>Comparação:</h6>
+        <p className="textCode">Operadores de comparação retornam valores booleanos. Por exemplo:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let numeroA = 5;
+let numeroB = 10;
+
+let resultado = numeroA < numeroB;
+console.log(resultado); // Saída: true (porque 5 é menor que 10)`}/>
+        </div>
+        <h6>Estruturas Condicionais:</h6>
+        <p className="textCode">As estruturas condicionais, como if, else if e else, usam valores booleanos para determinar o fluxo do programa:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let temperatura = 25;
+
+if (temperatura > 30) {
+  console.log("Está muito quente!");
+} else if (temperatura >= 20 && temperatura <= 30) {
+  console.log("O clima está agradável.");
+} else {
+  console.log("Está um pouco frio.");`}/>
+        </div>
+        <h6>Funções que Retornam Booleanos:</h6>
+        <p className="textCode">Funções frequentemente retornam valores booleanos para indicar o sucesso ou falha de uma operação:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`function login(usuario, senha) {
+  // Lógica para verificar as credenciais
+  if (usuario === "admin" && senha === "senha123") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let autenticado = login("admin", "senha123");
+console.log(autenticado); // Saída: true`}/>
+        </div>
+        <h6>Valores Truthy e Falsy:</h6>
+        <p className="textCode">Em JavaScript, além dos valores true e false, existem valores "truthy" e "falsy" que podem ser avaliados como booleanos em um contexto condicional. Por exemplo, uma string não vazia é avaliada como true, enquanto uma string vazia é avaliada como false.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let stringNaoVazia = "Olá";
+if (stringNaoVazia) {
+  console.log("A string não está vazia!");
+} else {
+  console.log("A string está vazia.");
+}`}/>
+        </div>
+        </div>{/*-------Boolean-------*/}
+        
+        {/*-------BOOLEAN-------*/}
+        <div className="undefined">
         <h5>Undefined</h5>
+        <p className="textCode">o valor undefined é um tipo de dado que representa a ausência de um valor ou a falta de definição de uma variável. Quando uma variável é declarada, mas nenhum valor é atribuído a ela, seu valor padrão é undefined.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let variavelIndefinida;
+console.log(variavelIndefinida); // Saída: undefined`}/>
+        </div>
+        <p >Neste exemplo, a variável variavelIndefinida é declarada, mas nenhum valor é atribuído explicitamente a ela. Portanto, seu valor padrão é undefined.</p>
+        <h6>Retorno de Funções:</h6>
+        <p className="textCode">Funções em JavaScript podem não ter um valor de retorno explícito. Nesse caso, o valor de retorno padrão é undefined.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`function semRetorno() {
+  // Esta função não tem uma instrução de retorno
+}
+
+let resultado = semRetorno();
+console.log(resultado); // Saída: undefined`}/>
+        </div>
+        <h6>Argumentos Ausentes:</h6>
+        <p className="textCode">Quando uma função é chamada com menos argumentos do que o número de parâmetros definidos, os parâmetros ausentes recebem o valor undefined.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`function soma(a, b) {
+  return a + b;
+}
+
+let resultado = soma(5);
+console.log(resultado); // Saída: NaN (porque b é undefined)`}/>
+        </div>
+        <h6>Acesso a Propriedades Indefinidas:</h6>
+        <p className="textCode">Ao tentar acessar uma propriedade que não existe em um objeto, o resultado é undefined.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let objeto = { chave: 'valor' };
+console.log(objeto.outraChave); // Saída: undefined`}/>
+        </div>
+
+
+        </div>{/*-------Boolean-------*/}
         <h5>Null</h5>
         <h5>Symbol</h5>
         <h4>TIPOS OBJETOS</h4>
