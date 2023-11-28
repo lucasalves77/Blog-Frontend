@@ -9,27 +9,63 @@ const Javascript = () => {
     <div className="container">
       <h1>Javascript</h1>
       <div className="prefacio">
-          <ul>
-            <li><a href="#variaveis">Variáveis</a></li>
-            <li><a href="#tiposDeDados">Tipos de dados</a></li>
-            <li><a href="#operadores">Operadores</a></li>
-            <li><a href="#condicionais">Condicionais</a></li>
-            <li><a href="#arraysObjetos">Arrays e Objetos</a></li>
-            <li><a href="#funcoes">Funções</a></li>
-            <li><a href="#escopoClosures">Escopo e Closures</a></li>
-            <li><a href="#callbacks">Callbacks</a></li>
-            <li><a href="#promises">Promises</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#manipulacaoDoDom">Manipulação do Dom</a></li>
-          </ul>
+        <details>
+          <summary>Variáveis</summary>
+          <a href="#var">Var</a>
+          <a href="#let">Let</a>
+          <a href="#const">Const</a>
+        </details>
+        <details>
+          <summary>Tipos de dados</summary>
+          <a href="#number">Number</a>
+          <a href="#string">String</a>
+          <a href="#boolean">Boolean</a>
+          <a href="#undefined">Undefined</a>
+        </details>
+        <details>
+          <summary>Operadores</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Condicionais</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Arrays e Objetos</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Funções</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Escopo e Closures</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Callbacks</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Promises</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Eventos</summary>
+          <a href="">let</a>
+        </details>
+        <details>
+          <summary>Manipulação do Dom</summary>
+          <a href="">let</a>
+        </details>     
       </div>
         <h3 className="tituloh3" id="Variaveis">VARIAVEIS</h3>
         <div className="line"></div>
         <p><b>Var</b>: Antiga forma de declarar variáveis. Escopo de função.</p>
         <p><b>Let</b>: Introduzido no ECMAScript 6 (ES6). Escopo de bloco.</p>
         <p><b>Const</b>: Também introduzido no ES6. Similar ao let, mas a variável não pode ser.</p>
-        <div>
-          <h5>Variavel var</h5>
+        <div id="var">
+          <h5>Var</h5>
         <p className="textCode">Em JavaScript, a palavra-chave var é usada para declarar uma variável. Uma variável é como uma caixa de armazenamento que você pode usar para guardar valores. Aqui está um exemplo simples:</p>
         <div className="ide">
         <Codeide/>
@@ -50,8 +86,8 @@ const Javascript = () => {
         </div>
         <p>É importante mencionar que <b>var</b> tem algumas peculiaridades em comparação com outras formas de declarar variáveis em JavaScript, como <b>let</b> e <b>const</b>. Por exemplo, <b>var</b> é funcionalmente "elevado" para o topo do escopo em que foi declarado (isso é chamado de hoisting), o que pode levar a comportamentos inesperados. Em projetos mais modernos, geralmente é preferível usar <b>let</b> ou <b>const</b> em vez de <b>var</b>, pois essas palavras-chave têm um escopo mais previsível.</p>
       </div>
-      <div>
-        <h5>Variavel let</h5>
+      <div id="let">
+        <h5>Let</h5>
         <p>A palavra-chave let em JavaScript é usada para declarar uma variável, assim como var. No entanto, let tem algumas diferenças importantes, especialmente em relação ao escopo.</p>
         <p>Diferentemente de var, let tem um escopo de bloco, o que significa que a variável só é visível dentro do bloco em que foi declarada.</p>
         <p className="textCode">Aqui está um exemplo simples de como você pode usar let para declarar e atribuir uma variável:</p>
@@ -61,6 +97,9 @@ const Javascript = () => {
           code={`let minhaVariavel = 10;`}/>   
         </div>
         <p>Variáveis declaradas com let são limitadas ao escopo de bloco em que foram definidas.</p>
+      <div id="const">
+      <h5>Const</h5>
+      </div>
       </div> 
       <div id="tiposDeDados">
         <h3 className="tituloh3">TIPOS DE DADOS</h3>
@@ -68,7 +107,7 @@ const Javascript = () => {
         <h4>TIPOS PRIMITIVOS</h4> 
 
         {/*----------NUMBER-----------*/}
-        <div className="number">
+        <div id="number" className="number">
         <h5>Number</h5>
         <p >Em JavaScript, o tipo de dado number é usado para representar valores numéricos, sejam eles inteiros ou de ponto flutuante (números decimais). Aqui estão algumas características importantes do tipo de dado number em JavaScript, juntamente com exemplos:</p>
         <h6>Inteiros e Ponto Flutuante:</h6>
@@ -116,7 +155,7 @@ let numeroObjeto = new Number(42);`}/>
         </div>{/*----------number-----------*/}
 
         {/*----------STRING-----------*/}
-        <div className="string">
+        <div id="string" className="string">
           <h5>String</h5>
         <p>uma string é um tipo de dado que representa uma sequência de caracteres. As strings são usadas para armazenar e manipular texto. Elas podem conter letras, números, espaços, pontuações e outros caracteres.</p>
         <p className="textCode">Para declarar uma string em JavaScript, você pode usar aspas simples (') ou duplas ("). Aqui estão alguns exemplos:</p>
@@ -180,7 +219,7 @@ console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "pod
         </div>{/*----------string-----------*/}
         
         {/*----------BOOLEAN-----------*/}
-        <div className="boolean">
+        <div id="boolean" className="boolean">
           <h5>Boolean</h5>
         <h6>Declaração de Variáveis Booleanas:</h6>
         <p className="textCode">Você pode declarar variáveis booleanas atribuindo-lhes valores true ou false:</p>
@@ -258,8 +297,8 @@ if (stringNaoVazia) {
         </div>
         </div>{/*-------Boolean-------*/}
         
-        {/*-------BOOLEAN-------*/}
-        <div className="undefined">
+        {/*-------UNDEFINED-------*/}
+        <div id="undefined" className="undefined">
         <h5>Undefined</h5>
         <p className="textCode">o valor undefined é um tipo de dado que representa a ausência de um valor ou a falta de definição de uma variável. Quando uma variável é declarada, mas nenhum valor é atribuído a ela, seu valor padrão é undefined.</p>
         <div className="ide">
