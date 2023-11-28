@@ -7,6 +7,7 @@ import CodeHighlighter from '../components/CodeHighlighter';
 const Javascript = () => {
   return(
     <div className="container">
+
       <h1>Javascript</h1>
       <div className="prefacio">
         <details>

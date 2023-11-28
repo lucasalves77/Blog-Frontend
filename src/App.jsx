@@ -1,13 +1,13 @@
 import './App.css';
-
 import {Outlet} from "react-router-dom";
-
 import Navbar from "./components/Navbar"
+import Inicio from './components/Inicio';
 
 function App() {
   return (
     
     <div className="App">
+      <Inicio/>
       <div className='logo'>
         <h2 className='logoF'>F</h2>
         <h3 className='logoE'>E</h3>
