@@ -11,7 +11,7 @@ function App() {
       <div className='logo'>
         <h2 className='logoF'>F</h2>
         <h3 className='logoE'>E</h3>
-      </div>
+      </div>     
       <Navbar/>
       <Outlet/>
       <footer className='container'>

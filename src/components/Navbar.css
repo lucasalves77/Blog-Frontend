@@ -1,0 +1,35 @@
+.menu{
+  background-image: linear-gradient(to top right, #f54b64, #f78361);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.menu2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobileMenu{
+  display: none;
+}
+
+.menuMobile{
+  display: none;
+}
+
+.openLogo{
+  display: none;
+}
+
+.mobileMenu.abrir-menu{
+  width: 70%;
+}
+
+.fechar{
+  background-color: red;
+  display: none;
+}
+
+.fechar i{
+  background-color: green;
+  font-size: 2rem;
+}
