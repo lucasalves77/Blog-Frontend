@@ -1,0 +1,30 @@
+.ide{
+  background-color: #323d52;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.macos{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.mac{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.one{
+  background-color: #ff5f5a;
+}
+
+.two{
+  background-color: #ffbe2e;
+}
+
+.three{
+  background-color: #2aca44;
+}

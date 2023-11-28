@@ -1,0 +1,55 @@
+.tituloh3{
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+h4{
+  color: white;
+  font-size: 1.4rem;
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+}
+
+p{
+  color: rgb(209, 209, 209);
+}
+
+.code{
+  font-weight: 700;
+  color: white;
+}
+
+.topico{
+  margin: 20px 0 20px 18px;
+}
+
+.topico li{
+  color: rgb(209, 209, 209);
+}
+
+b{
+  color: white;
+  margin: 5px 0;
+}
+
+.prefacio ul{
+  list-style: none;
+  margin: 30px 0;
+}
+
+.prefacio ul li a{
+  text-decoration: none;
+  color: #f78361;
+  font-weight: 700;
+}
+
+.line{
+  background-color: #59657e;
+  width: 100%;
+  height: 1px;
+}

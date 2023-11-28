@@ -1,0 +1,16 @@
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logoF{
+  color: #f54b64;
+  font-size: 3rem;
+}
+
+.logoE{
+  color: #f78361;
+  font-size: 2rem;
+}
