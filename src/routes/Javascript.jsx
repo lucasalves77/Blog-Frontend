@@ -33,7 +33,12 @@ const Javascript = () => {
         </details>
         <details>
           <summary>Operadores</summary>
-          <a href="">let</a>
+          <h6 className="sublist">Operadores Aritméticos</h6>
+          <a href="#adicao">Adicao(+)</a>
+          <a href="#subtracao">Subtracao(-)</a>
+          <a href="#multiplicao">Multiplicao(*)</a>
+          <a href="#divisao">Divisao(/)</a>
+          <a href="#modulo">Modulo(%)</a>
         </details>
         <details>
           <summary>Condicionais</summary>
@@ -388,8 +393,8 @@ console.log(objeto.outraChave); // Saída: undefined`}/>
         <h3 className="tituloh3">OPERADORES</h3>
         <div className="line"></div>
         <h4>Operadores Aritmeticos</h4>
-        <h5>Adicao(+)</h5>
-        <h5>Subtracao(-)</h5>
+        <h5 id="adicao">Adicao(+)</h5>
+        <h5 id="subtracao">Subtracao(-)</h5>
         <h5>Multiplicao(*)</h5>
         <h5>Divisao(/)</h5>
         <h5>Modulo(%)</h5>
