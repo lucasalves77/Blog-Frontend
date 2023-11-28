@@ -34,7 +34,6 @@ p{
 
 b{
   color: white;
-  margin: 5px 0;
 }
 
 .prefacio ul{
@@ -46,10 +45,19 @@ b{
   text-decoration: none;
   color: #f78361;
   font-weight: 700;
+  transition: 0.3s;
+}
+
+.prefacio ul li a:hover{
+  text-decoration: underline;
 }
 
 .line{
   background-color: #59657e;
   width: 100%;
   height: 1px;
+}
+
+.textCode{
+  color: rgb(209, 209, 209);
 }
