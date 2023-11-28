@@ -102,8 +102,76 @@ let naoENumero = NaN;`}/>
           code={`let stringNumero = "42";
 let numeroConvertido = parseInt(stringNumero);`}/>
         </div>
+        <h6>Objeto Number:</h6>
+        <p className="textCode">Além do tipo primitivo number, existe um objeto embutido chamado Number que fornece propriedades e métodos úteis para trabalhar com números.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let numeroPrimitivo = 42;
+let numeroObjeto = new Number(42);`}/>
+        </div>
         <h5>String</h5>
+        <p>uma string é um tipo de dado que representa uma sequência de caracteres. As strings são usadas para armazenar e manipular texto. Elas podem conter letras, números, espaços, pontuações e outros caracteres.</p>
+        <p className="textCode">Para declarar uma string em JavaScript, você pode usar aspas simples (') ou duplas ("). Aqui estão alguns exemplos:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let primeiraString = 'Isso é uma string com aspas simples.';
+let segundaString = "Isso é outra string com aspas duplas.";`}/>
+        </div>
+        <p className="textCode">Você também pode criar uma string usando o construtor String():</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let terceiraString = new String('Isso é uma string usando o construtor String.');`}/>
+        </div>
+        <p className="textCode">No entanto, a forma mais comum de criar strings é usando as aspas simples ou duplas diretamente.</p>
+        <p>Operações com Strings:</p>
+        <h6>Concatenação:</h6>
+        <p className="textCode">A concatenação de strings é a operação de combinar duas ou mais strings em uma única string. Isso pode ser feito usando o operador +:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let saudacao = 'Olá';
+let nome = 'Usuário';
+let mensagem = saudacao + ', ' + nome + '!';
+console.log(mensagem); // Saída: Olá, Usuário!`}/>
+        </div>
+        <h6>Comprimento da String:</h6>
+        <p className="textCode">O comprimento de uma string pode ser obtido usando a propriedade length:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let minhaString = 'Esta é uma string.';
+console.log(minhaString.length); // Saída: 18 (o comprimento da string)`}/>
+        </div>
+        <h6>Acessando Caracteres:</h6>
+        <p className="textCode">Os caracteres em uma string podem ser acessados usando a notação de colchetes:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let minhaString = 'JavaScript';
+console.log(minhaString[0]); // Saída: J (primeiro caractere)
+console.log(minhaString[4]); // Saída: S (quinto caractere)`}/>
+        </div>
+        <h6>Métodos de String:</h6>
+        <p className="textCode">JavaScript fornece uma variedade de métodos embutidos para manipulação de strings, como toUpperCase(), toLowerCase(), indexOf(), slice(), etc. Aqui está um exemplo:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let frase = 'JavaScript é poderoso.';
+console.log(frase.toUpperCase()); // Saída: JAVASCRIPT É PODEROSO.
+console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "poderoso")`}/>
+        </div>
+        <h6>Escape de Caracteres:</h6>
+        <p className="textCode">Para incluir caracteres especiais em uma string, você pode usar escape de caracteres com a barra invertida ('\'). Por exemplo:</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" 
+          code={`let stringComAspas = 'Esta é uma string com aspas simples ('\').';`}/>
+        </div>
         <h5>Boolean</h5>
+        <h6>Declaração de Variáveis Booleanas:</h6>
         <h5>Undefined</h5>
         <h5>Null</h5>
         <h5>Symbol</h5>
