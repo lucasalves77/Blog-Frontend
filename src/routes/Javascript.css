@@ -42,6 +42,10 @@ b{
   color: white;
 }
 
+.prefacio{
+  padding: 20px 0;
+}
+
 summary{
   text-decoration: none;
   color: #f78361;
