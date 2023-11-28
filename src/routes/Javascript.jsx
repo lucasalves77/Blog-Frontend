@@ -34,11 +34,39 @@ const Javascript = () => {
         <details>
           <summary>Operadores</summary>
           <h6 className="sublist">Operadores Aritméticos</h6>
-          <a href="#adicao">Adicao(+)</a>
-          <a href="#subtracao">Subtracao(-)</a>
-          <a href="#multiplicao">Multiplicao(*)</a>
-          <a href="#divisao">Divisao(/)</a>
-          <a href="#modulo">Modulo(%)</a>
+            <a href="#adicao">Adicao(+)</a>
+            <a href="#subtracao">Subtracao(-)</a>
+            <a href="#multiplicao">Multiplicao(*)</a>
+            <a href="#divisao">Divisao(/)</a>
+            <a href="#modulo">Modulo(%)</a>
+          <h6 className="sublist">Operadores de incremento e decremento</h6>
+            <a href="#incremento">Incremento(++)</a>
+            <a href="#decremento">Decremento(--)</a>
+          <h6 className="sublist">Operadores de Atribuicao</h6>
+            <a href="#atribuicaoSimples">Atribuicao simples(=)</a>
+            <a href="#atribuicaoComOperacao">Atribuicao com Operacao(+=,-=,/=)</a>
+          <h6 className="sublist">Operadores de Comparacao</h6>
+            <a href="#igual">Igual(==)</a>
+            <a href="#estritamenteIgual">Estritamente igual(===)</a>
+            <a href="#diferente">Diferente(!=)</a>
+            <a href="#estritamenteDiferente">Estritamente diferente(!==)</a>
+            <a href="#maior">Maior({'>'})</a>
+            <a href="#menor">Menor({'<'})</a>
+            <a href="#maiorOuIgual">Maior ou igual({'>='})</a>
+            <a href="#menorOuIgual">Menor ou igual({'<='})</a>
+          <h6 className="sublist">Operadores Logicos</h6>
+            <a href="#elogico">E logico(&&)</a>
+            <a href="#oulogico">OU logico(||)</a>
+            <a href="#naoLogico">NAO logico(!)</a>
+          <h6 className="sublist">Operador Ternario</h6>
+            <a href="#operadorTernario">Operador ternario(?:)</a>
+          <h6 className="sublist">Operadores Betwise</h6>
+            <a href="#andBitaBit">AND Bit a Bit(&)</a>
+            <a href="#orBitaBit">OR Bit a Bit(|)</a>
+            <a href="#xorBitaBit">XOR Bit a Bit(^)</a>
+            <a href="#shiftaEsquerda">Shift a esquerda({'<<'})</a>
+            <a href="#shiftDireitaCompreenchimento">Shift a direita com preenchimento zero({'>>>'})</a>
+            <a href="#shiftDireitaComSinal">Shift a direita com sinal({'>>'})</a>
         </details>
         <details>
           <summary>Condicionais</summary>
@@ -395,36 +423,37 @@ console.log(objeto.outraChave); // Saída: undefined`}/>
         <h4>Operadores Aritmeticos</h4>
         <h5 id="adicao">Adicao(+)</h5>
         <h5 id="subtracao">Subtracao(-)</h5>
-        <h5>Multiplicao(*)</h5>
-        <h5>Divisao(/)</h5>
-        <h5>Modulo(%)</h5>
-        <h5>Incremento(++)</h5>
-        <h5>Decremento(--)</h5>
+        <h5 id="multiplicacao">Multiplicao(*)</h5>
+        <h5 id="divisao">Divisao(/)</h5>
+        <h5 id="modulo">Modulo(%)</h5>
+        <h4>Operadores de incremento e decremento</h4>
+        <h5 id="incremento">Incremento(++)</h5>
+        <h5 id="decremento">Decremento(--)</h5>
         <h4>Operadores de Atribuicao</h4>
-        <h5>Atribuicao simples(=)</h5>
-        <h5>Atribuicao com Operacao(+=,-=,/=)</h5>
+        <h5 id="atribuicaoSimples">Atribuicao simples(=)</h5>
+        <h5 id="atribuicaoComOperacao">Atribuicao com Operacao(+=,-=,/=)</h5>
         <h4>Operadores de comparacao</h4>
-        <h5>Igual(==)</h5>
-        <h5>Estritamente igual(===)</h5>
-        <h5>Diferente(!=)</h5>
-        <h5>Estritamente diferente(!==)</h5>
-        <h5>Maior({'>'})</h5>
-        <h5>Menor({'<'})</h5>
-        <h5>Maior ou igual({'>='})</h5>
-        <h5>Menor ou igual({'<='})</h5>
+        <h5 id="igual">Igual(==)</h5>
+        <h5 id="estritamenteIgual">Estritamente igual(===)</h5>
+        <h5 id="diferente">Diferente(!=)</h5>
+        <h5 id="estritamenteDiferente">Estritamente diferente(!==)</h5>
+        <h5 id="maior">Maior({'>'})</h5>
+        <h5 id="menor">Menor({'<'})</h5>
+        <h5 id="maiorOuIgual">Maior ou igual({'>='})</h5>
+        <h5 id="menorOuIgual">Menor ou igual({'<='})</h5>
         <h4>Operadores Logicos</h4>
-        <h5>E logico(&&)</h5>
-        <h5>OU logico(||)</h5>
-        <h5>NAO logico(!)</h5>
+        <h5 id="elogico">E logico(&&)</h5>
+        <h5 id="oulogico">OU logico(||)</h5>
+        <h5 id="naoLogico">NAO logico(!)</h5>
         <h4>Operador ternario</h4>
-        <h5>Operador ternario(?:)</h5>
+        <h5 id="operadorTernario">Operador ternario(?:)</h5>
         <h4>Operadores bitwise</h4>
-        <h5>AND Bit a Bit(&)</h5>
-        <h5>OR Bit a Bit(|)</h5>
-        <h5>XOR Bit a Bit(^)</h5>
-        <h5>Shift a esquerda({'<<'})</h5>
-        <h5>Shift a direita com preenchimento zero({'>>>'})</h5>
-        <h5>Shift a direita com sinal({'>>'})</h5>
+        <h5 id="andBitaBit">AND Bit a Bit(&)</h5>
+        <h5 id="orBitaBit">OR Bit a Bit(|)</h5>
+        <h5 id="xorBitaBit">XOR Bit a Bit(^)</h5>
+        <h5 id="shiftaEsquerda">Shift a esquerda({'<<'})</h5>
+        <h5 id="shiftDireitaCompreenchimento">Shift a direita com preenchimento zero({'>>>'})</h5>
+        <h5 id="shiftDireitaComSinal">Shift a direita com sinal({'>>'})</h5>
       </div>
       <div id="condicionais">
         <h3 className="tituloh3">CONDICIONAIS</h3>
