@@ -2,27 +2,36 @@ import './App.css';
 import {Outlet} from "react-router-dom";
 import Navbar from "./components/Navbar"
 import Inicio from './components/Inicio';
+import minhaImagen from './imagens/logo.png';
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import MenuHeader from './pages/MenuHeader'
 
 function App() {
   return (
     
     <div className="App">
       <Inicio/>
-      <div className='logo'>
-        <h2 className='logoF'>F</h2>
-        <h3 className='logoE'>E</h3>
+      <div className="container logo">
+        <img src={minhaImagen} alt="" />
+        <MenuHeader/>
       </div>     
       <Navbar/>
       <Outlet/>
-      <footer className='container'>
+      <div className='container'>
+        <footer className=' meuFooter'>
         <p>Todos direitos reservados</p>
         <ul className='icons'>
-          <li><a href="https://github.com/lucasalves77"><i class="fa-brands fa-square-github"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
-          <li><a href="linkedin.com/in/lucas-alvesz"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li><a href="https://github.com/lucasalves77"><TbBrandGithubFilled /></a></li>
+          <li><a href=""><RiInstagramFill /></a></li>
+          <li><a href="linkedin.com/in/lucas-alvesz"><FaLinkedinIn /></a></li>
+          <li><a href=""><FaTwitter /></a></li>
         </ul>
       </footer>
+      </div>
+      
     </div>
   );
 }

@@ -1,16 +1,49 @@
 .logo{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
 
-.logoF{
-  color: #f54b64;
-  font-size: 3rem;
+.icons{
+  display: flex;
+  list-style: none;
+  gap: 20px; 
 }
 
-.logoE{
-  color: #f78361;
+.icons li a{
+  display: flex;
+  color: #f54b64;
   font-size: 2rem;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #323d52;
+}
+
+.icons li a:hover{
+  color: white;
+  background-color: #f54b64;
+  transition: 0.5s;
+}
+
+.meuFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.meuFooter p{
+  color:white;
+}
+
+@media (max-width: 550px){
+  
+  .meuFooter{
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+
 }

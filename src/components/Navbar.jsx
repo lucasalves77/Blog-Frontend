@@ -7,7 +7,6 @@ import {ImCross} from "react-icons/im"
 
 
 
-
 const Navbar = () => {
 
   const [Mobile, setMobile] = useState(false);
