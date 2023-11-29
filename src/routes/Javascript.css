@@ -86,7 +86,18 @@ details a:hover{
   margin-top: 25px;
 }
 
+.margem-apos-clicar{
+  margin-top: 20px;
+}
+
+
 @media (max-width: 550px){
 
-  
+  html {
+    scroll-behavior: smooth;
+  }
+   
+  :target {
+    scroll-margin-top: 6em;
+  }
 }

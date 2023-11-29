@@ -4,9 +4,12 @@ import Codeide from '../components/Codeide';
 import CodeHighlighter from '../components/CodeHighlighter';
 
 
+
+
 const Javascript = () => {
+
   return(
-    <div className="container">
+    <div className="container topJavascript">
 
       <h1>Javascript</h1>
       <div className="prefacio">
