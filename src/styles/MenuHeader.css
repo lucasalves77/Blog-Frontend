@@ -1,0 +1,13 @@
+.header ul{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
