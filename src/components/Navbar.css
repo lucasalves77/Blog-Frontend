@@ -1,35 +1,83 @@
-.menu{
+.desktopMenu{
   background-image: linear-gradient(to top right, #f54b64, #f78361);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.menu2{
-  display: flex;
-  justify-content: space-around;
-}
-
-.mobileMenu{
-  display: none;
-}
-
-.menuMobile{
-  display: none;
+.menuLinks{
+  display: block;
 }
 
 .openLogo{
   display: none;
 }
 
-.mobileMenu.abrir-menu{
-  width: 70%;
+.menuLinks{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 0;
 }
 
-.fechar{
-  background-color: red;
+.mobile-menu-icon {
   display: none;
 }
 
-.fechar i{
-  background-color: green;
-  font-size: 2rem;
+@media (max-width: 550px) {
+
+  .desktopMenu{
+    background:transparent;
+    box-shadow: none; 
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .menuLinks{
+    display: none;
+  }
+
+  .menuLinksMobiles{
+    background-image: linear-gradient(to top right, #f54b64, #f78361);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    width: 70%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 888;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menuLinksMobiles li{
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  .openLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323d52;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 2%;
+    z-index: 999;
+  }
+
+  .mobile-menu-icon{
+    display: flex;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
 }
