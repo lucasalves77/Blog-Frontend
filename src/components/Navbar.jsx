@@ -15,13 +15,13 @@ const Navbar = () => {
   return(
     <>
       <div className="desktopMenu">
-           <div className="openLogo">
+        <div className="openLogo">
           <img src={minhaImagen} alt="" />
           <button className='mobile-menu-icon' onClick={() => setMobile(!Mobile)} >
             {Mobile ? <ImCross/> : <FaBars/>}
           </button>
         </div>
-          <nav className="container ">
+          <nav className="container">
             <ul className={Mobile ? "menuLinksMobiles" : "menuLinks"} onClick={() => setMobile(false)}>
               <li><Link className="link" to="/Html">Html</Link></li>
               <li><Link className="link" to="/Css">Css</Link></li>

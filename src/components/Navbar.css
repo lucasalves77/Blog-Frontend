@@ -4,18 +4,15 @@
 }
 
 .menuLinks{
-  display: block;
-}
-
-.openLogo{
-  display: none;
-}
-
-.menuLinks{
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 10px 0;
+}
+
+
+.openLogo{
+  display: none;
 }
 
 .mobile-menu-icon {
@@ -58,7 +55,6 @@
     list-style: none;
     transition: all 0.5s ease-in-out;
   }
-
 
   .openLogo{
     display: flex;
