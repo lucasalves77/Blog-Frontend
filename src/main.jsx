@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-
+import Home from "./routes/Home"
 import Html from "./routes/Html";
 import Css from "./routes/Css";
 import Javascript from "./routes/Javascript";
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children:[
+      {
+        path: "home",
+        element: <Home/>,
+      },
       {
         path: "html",
         element: <Html/>,
