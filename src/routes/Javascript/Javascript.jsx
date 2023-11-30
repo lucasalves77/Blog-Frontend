@@ -448,6 +448,7 @@ console.log(objeto); // Saída: { chave: 'valor' }
 objeto = null;
 console.log(objeto); // Saída: null`}/>
         </div>
+        <p>O uso de null é uma prática comum em JavaScript quando queremos indicar explicitamente que algo está ausente ou não tem um valor válido. No entanto, é essencial ter cuidado ao verificar se uma variável é null para evitar erros, especialmente quando se trata de objetos e referências de memória.</p>
         </div>{/*-------null-------*/}
         
         {/*-------SYMBOL-------*/}
