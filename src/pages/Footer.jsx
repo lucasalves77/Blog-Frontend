@@ -1,7 +1,7 @@
-import FaTwitter from "react-icons/fa";
-import FaLinkedinIn from "react-icons/fa";
-import RiInstagramFill from "react-icons/ri";
-import TbBrandGithubFilled from "react-icons/tb";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn }from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { TbBrandGithubFilled } from "react-icons/tb";
 import './Footer.css'
 
 const Footer = () => {
