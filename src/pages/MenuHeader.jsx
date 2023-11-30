@@ -1,17 +1,19 @@
-import { Link } from "react-router-dom"
-import '../styles/MenuHeader.css'
+import { Link } from "react-router-dom"; 
+import React from "react"
+import './MenuHeader.css'
+import minhaImagen from '../imagens/logo.png';
 
-
-const MenuHeader = () => {
+const MenuHeader = () =>{
   return(
     <>
-    <div className="header">
-      <ul>
-        <li><Link className="header-link" to="/home">Home</Link></li>
-        <li><Link className="header-link">Sobre</Link></li>
-        <li><Link className="header-link">Contato</Link></li>
-      </ul>
-    </div>
+      <div className="container header">
+        <img src={minhaImagen} alt="" />
+        <ul>
+          <li><Link className="header-link" to="/">Home</Link></li>
+          <li><Link className="header-link" to="/sobre">Sobre</Link></li>
+          <li><Link className="header-link" to="/contato">Contato</Link></li>
+        </ul>
+      </div>
     </>
   )
 }
