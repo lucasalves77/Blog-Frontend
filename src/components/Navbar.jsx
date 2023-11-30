@@ -11,7 +11,6 @@ const Navbar = () => {
 
   const [Mobile, setMobile] = useState(false);
   
-
   return(
     <>
       <div className="desktopMenu">
@@ -30,10 +29,10 @@ const Navbar = () => {
               <li><Link className="link" to="/React">React</Link></li>
               <li><Link className="link" to="/Vue">Vue</Link></li>
               <li><Link className="link" to="/Angular">Angular</Link></li>
-              <li><Link className="link" to="/Git">Git</Link></li>
               <li><Link className="link" to="/Sass">Sass</Link></li>
               <li><Link className="link" to="/Less">Less</Link></li>
               <li><Link className="link" to="/Webpack">Webpack</Link></li>
+              <li><Link className="link" to="/Git">Git</Link></li>
             </ul>
           </nav>
       </div>

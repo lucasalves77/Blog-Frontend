@@ -8,11 +8,12 @@ import CodeHighlighter from '../../components/CodeHighlighter';
 
 const Javascript = () => {
 
-  return(
-    <div className="container topJavascript">
-      <h1>Javascript</h1>
-      <h5>Conteudos</h5>
+  return(   
+    <div className="container ">
+      <div className="topJavascript">
+        <h1>Javascript</h1>
       <div className="prefacio">
+        <h5>Conteudos</h5>
         <details>
           <summary>Variáveis</summary>
           <a href="#var">Var</a>
@@ -21,14 +22,14 @@ const Javascript = () => {
         </details>
         <details>
           <summary>Tipos de dados</summary>
-          <h6 className="sublist">Tipos primitivos</h6>
+          <h6 >Tipos primitivos</h6>
             <a href="#number">Number</a>
             <a href="#string">String</a>
             <a href="#boolean">Boolean</a>
             <a href="#undefined">Undefined</a>
             <a href="#null">Null</a>
             <a href="#symbol">Symbol</a>
-          <h6 className="sublist">Tipos objetos</h6>
+          <h6 >Tipos objetos</h6>
             <a href="#object">Object</a>
             <a href="#array">Array</a>
             <a href="#function">Function</a>
@@ -37,19 +38,19 @@ const Javascript = () => {
         </details>
         <details>
           <summary>Operadores</summary>
-          <h6 className="sublist">Operadores Aritméticos</h6>
+          <h6 >Operadores Aritméticos</h6>
             <a href="#adicao">Adicao(+)</a>
             <a href="#subtracao">Subtracao(-)</a>
             <a href="#multiplicao">Multiplicao(*)</a>
             <a href="#divisao">Divisao(/)</a>
             <a href="#modulo">Modulo(%)</a>
-          <h6 className="sublist">Operadores de incremento e decremento</h6>
+          <h6 >Operadores de incremento e decremento</h6>
             <a href="#incremento">Incremento(++)</a>
             <a href="#decremento">Decremento(--)</a>
-          <h6 className="sublist">Operadores de Atribuicao</h6>
+          <h6 >Operadores de Atribuicao</h6>
             <a href="#atribuicaoSimples">Atribuicao simples(=)</a>
             <a href="#atribuicaoComOperacao">Atribuicao com Operacao(+=,-=,/=)</a>
-          <h6 className="sublist">Operadores de Comparacao</h6>
+          <h6 >Operadores de Comparacao</h6>
             <a href="#igual">Igual(==)</a>
             <a href="#estritamenteIgual">Estritamente igual(===)</a>
             <a href="#diferente">Diferente(!=)</a>
@@ -58,13 +59,13 @@ const Javascript = () => {
             <a href="#menor">Menor({'<'})</a>
             <a href="#maiorOuIgual">Maior ou igual({'>='})</a>
             <a href="#menorOuIgual">Menor ou igual({'<='})</a>
-          <h6 className="sublist">Operadores Logicos</h6>
+          <h6 >Operadores Logicos</h6>
             <a href="#elogico">E logico(&&)</a>
             <a href="#oulogico">OU logico(||)</a>
             <a href="#naoLogico">NAO logico(!)</a>
-          <h6 className="sublist">Operador Ternario</h6>
+          <h6 >Operador Ternario</h6>
             <a href="#operadorTernario">Operador ternario(?:)</a>
-          <h6 className="sublist">Operadores Betwise</h6>
+          <h6 >Operadores Betwise</h6>
             <a href="#andBitaBit">AND Bit a Bit(&)</a>
             <a href="#orBitaBit">OR Bit a Bit(|)</a>
             <a href="#xorBitaBit">XOR Bit a Bit(^)</a>
@@ -115,8 +116,7 @@ const Javascript = () => {
         <p className="textCode">Em JavaScript, a palavra-chave var é usada para declarar uma variável. Uma variável é como uma caixa de armazenamento que você pode usar para guardar valores. Aqui está um exemplo simples:</p>
         <div className="ide">
         <Codeide/>
-        <CodeHighlighter language="javascript" 
-        code={`var minhavariavel = 10;`}/>
+        <CodeHighlighter language="javascript" code={`var minhavariavel = 10;`}/>
         </div>
         <ul className="topico">
           <li><b>var</b>: A palavra-chave que indica que você está declarando uma variável.</li>
@@ -127,8 +127,7 @@ const Javascript = () => {
         <p className="textCode">Depois de declarar a variável, você pode usá-la em seu código. Por exemplo:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`console.log(minhaVariavel; // Isso imprimirá 10 no console.)`}/>
+          <CodeHighlighter language="javascript" code={`console.log(minhaVariavel; // Isso imprimirá 10 no console.)`}/>
         </div>
         <p>É importante mencionar que <b>var</b> tem algumas peculiaridades em comparação com outras formas de declarar variáveis em JavaScript, como <b>let</b> e <b>const</b>. Por exemplo, <b>var</b> é funcionalmente "elevado" para o topo do escopo em que foi declarado (isso é chamado de hoisting), o que pode levar a comportamentos inesperados. Em projetos mais modernos, geralmente é preferível usar <b>let</b> ou <b>const</b> em vez de <b>var</b>, pois essas palavras-chave têm um escopo mais previsível.</p>
       </div>
@@ -139,8 +138,7 @@ const Javascript = () => {
         <p className="textCode">Aqui está um exemplo simples de como você pode usar let para declarar e atribuir uma variável:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let minhaVariavel = 10;`}/>   
+          <CodeHighlighter language="javascript" code={`let minhaVariavel = 10;`}/>   
         </div>
         <p>Variáveis declaradas com let são limitadas ao escopo de bloco em que foram definidas.</p>
       <div id="const">
@@ -161,15 +159,13 @@ const Javascript = () => {
         <div className="ide">
           <Codeide/>
           <CodeHighlighter language="javascript" 
-          code={`let inteiro = 42;          // Inteiro
-let decimal = 3.14;        // Ponto flutuante`}/>
+          code={`let inteiro = 42;          // Inteiro let decimal = 3.14;        // Ponto flutuante`}/>
         </div>
         <h6>Operações Aritméticas:</h6>   
         <p className="textCode">Você pode realizar operações aritméticas com números em JavaScript.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let soma = 5 + 3;          // Soma
+          <CodeHighlighter language="javascript" code={`let soma = 5 + 3;          // Soma
 let subtracao = 7 - 2;      // Subtração
 let multiplicacao = 4 * 6;  // Multiplicação
 let divisao = 8 / 2;        // Divisão`}/>
@@ -178,24 +174,20 @@ let divisao = 8 / 2;        // Divisão`}/>
         <p className="textCode">JavaScript inclui valores especiais como Infinity (infinito) e NaN (não é um número).</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let infinito = Infinity;
-let naoENumero = NaN;`}/>
+          <CodeHighlighter language="javascript" code={`let infinito = Infinity; let naoENumero = NaN;`}/>
         </div>
         <h6>Conversão de Tipos:</h6>
         <p className="textCode">É possível converter outros tipos de dados para number usando funções como parseInt() ou parseFloat().</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let stringNumero = "42";
+          <CodeHighlighter language="javascript" code={`let stringNumero = "42";
 let numeroConvertido = parseInt(stringNumero);`}/>
         </div>
         <h6>Objeto Number:</h6>
         <p className="textCode">Além do tipo primitivo number, existe um objeto embutido chamado Number que fornece propriedades e métodos úteis para trabalhar com números.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let numeroPrimitivo = 42;
+          <CodeHighlighter language="javascript" code={`let numeroPrimitivo = 42;
 let numeroObjeto = new Number(42);`}/>
         </div>
         </div>{/*----------number-----------*/}
@@ -207,8 +199,7 @@ let numeroObjeto = new Number(42);`}/>
         <p className="textCode">Para declarar uma string em JavaScript, você pode usar aspas simples (') ou duplas ("). Aqui estão alguns exemplos:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let primeiraString = 'Isso é uma string com aspas simples.';
+          <CodeHighlighter language="javascript" code={`let primeiraString = 'Isso é uma string com aspas simples.';
 let segundaString = "Isso é outra string com aspas duplas.";`}/>
         </div>
         <p className="textCode">Você também pode criar uma string usando o construtor String():</p>
@@ -223,8 +214,7 @@ let segundaString = "Isso é outra string com aspas duplas.";`}/>
         <p className="textCode">A concatenação de strings é a operação de combinar duas ou mais strings em uma única string. Isso pode ser feito usando o operador +:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let saudacao = 'Olá';
+          <CodeHighlighter language="javascript" code={`let saudacao = 'Olá';
 let nome = 'Usuário';
 let mensagem = saudacao + ', ' + nome + '!';
 console.log(mensagem); // Saída: Olá, Usuário!`}/>
@@ -233,16 +223,14 @@ console.log(mensagem); // Saída: Olá, Usuário!`}/>
         <p className="textCode">O comprimento de uma string pode ser obtido usando a propriedade length:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let minhaString = 'Esta é uma string.';
+          <CodeHighlighter language="javascript" code={`let minhaString = 'Esta é uma string.';
 console.log(minhaString.length); // Saída: 18 (o comprimento da string)`}/>
         </div>
         <h6>Acessando Caracteres:</h6>
         <p className="textCode">Os caracteres em uma string podem ser acessados usando a notação de colchetes:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let minhaString = 'JavaScript';
+          <CodeHighlighter language="javascript" code={`let minhaString = 'JavaScript';
 console.log(minhaString[0]); // Saída: J (primeiro caractere)
 console.log(minhaString[4]); // Saída: S (quinto caractere)`}/>
         </div>
@@ -250,8 +238,7 @@ console.log(minhaString[4]); // Saída: S (quinto caractere)`}/>
         <p className="textCode">JavaScript fornece uma variedade de métodos embutidos para manipulação de strings, como toUpperCase(), toLowerCase(), indexOf(), slice(), etc. Aqui está um exemplo:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let frase = 'JavaScript é poderoso.';
+          <CodeHighlighter language="javascript" code={`let frase = 'JavaScript é poderoso.';
 console.log(frase.toUpperCase()); // Saída: JAVASCRIPT É PODEROSO.
 console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "poderoso")`}/>
         </div>
@@ -259,8 +246,7 @@ console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "pod
         <p className="textCode">Para incluir caracteres especiais em uma string, você pode usar escape de caracteres com a barra invertida ('\'). Por exemplo:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let stringComAspas = 'Esta é uma string com aspas simples ('\').';`}/>
+          <CodeHighlighter language="javascript" code={`let stringComAspas = 'Esta é uma string com aspas simples ('\').';`}/>
         </div>
         </div>{/*----------string-----------*/}
         
@@ -271,16 +257,13 @@ console.log(frase.indexOf('poderoso')); // Saída: 15 (posição da palavra "pod
         <p className="textCode">Você pode declarar variáveis booleanas atribuindo-lhes valores true ou false:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let isAtivo = true;
-let isAdmin = false;`}/>
+          <CodeHighlighter language="javascript" code={`let isAtivo = true; let isAdmin = false;`}/>
         </div>
         <h6>Expressões Lógicas:</h6>
         <p className="textCode">Operadores lógicos em JavaScript, como && (AND), || (OR) e ! (NOT), são frequentemente usados com valores booleanos para criar expressões lógicas complexas:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let idade = 20;
+          <CodeHighlighter language="javascript" code={`let idade = 20;
 let ehMaiorDeIdade = idade >= 18;
 let temPermissao = true;
 
@@ -291,8 +274,7 @@ console.log(podeEntrar); // Saída: true (se ambas as condições forem verdadei
         <p className="textCode">Operadores de comparação retornam valores booleanos. Por exemplo:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let numeroA = 5;
+          <CodeHighlighter language="javascript" code={`let numeroA = 5;
 let numeroB = 10;
 
 let resultado = numeroA < numeroB;
@@ -302,8 +284,7 @@ console.log(resultado); // Saída: true (porque 5 é menor que 10)`}/>
         <p className="textCode">As estruturas condicionais, como if, else if e else, usam valores booleanos para determinar o fluxo do programa:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let temperatura = 25;
+          <CodeHighlighter language="javascript" code={`let temperatura = 25;
 
 if (temperatura > 30) {
   console.log("Está muito quente!");
@@ -316,8 +297,7 @@ if (temperatura > 30) {
         <p className="textCode">Funções frequentemente retornam valores booleanos para indicar o sucesso ou falha de uma operação:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`function login(usuario, senha) {
+          <CodeHighlighter language="javascript" code={`function login(usuario, senha) {
   // Lógica para verificar as credenciais
   if (usuario === "admin" && senha === "senha123") {
     return true;
@@ -333,8 +313,7 @@ console.log(autenticado); // Saída: true`}/>
         <p className="textCode">Em JavaScript, além dos valores true e false, existem valores "truthy" e "falsy" que podem ser avaliados como booleanos em um contexto condicional. Por exemplo, uma string não vazia é avaliada como true, enquanto uma string vazia é avaliada como false.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let stringNaoVazia = "Olá";
+          <CodeHighlighter language="javascript" code={`let stringNaoVazia = "Olá";
 if (stringNaoVazia) {
   console.log("A string não está vazia!");
 } else {
@@ -349,8 +328,7 @@ if (stringNaoVazia) {
         <p className="textCode">o valor undefined é um tipo de dado que representa a ausência de um valor ou a falta de definição de uma variável. Quando uma variável é declarada, mas nenhum valor é atribuído a ela, seu valor padrão é undefined.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let variavelIndefinida;
+          <CodeHighlighter language="javascript" code={`let variavelIndefinida;
 console.log(variavelIndefinida); // Saída: undefined`}/>
         </div>
         <p >Neste exemplo, a variável variavelIndefinida é declarada, mas nenhum valor é atribuído explicitamente a ela. Portanto, seu valor padrão é undefined.</p>
@@ -358,8 +336,7 @@ console.log(variavelIndefinida); // Saída: undefined`}/>
         <p className="textCode">Funções em JavaScript podem não ter um valor de retorno explícito. Nesse caso, o valor de retorno padrão é undefined.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`function semRetorno() {
+          <CodeHighlighter language="javascript" code={`function semRetorno() {
   // Esta função não tem uma instrução de retorno
 }
 
@@ -370,8 +347,7 @@ console.log(resultado); // Saída: undefined`}/>
         <p className="textCode">Quando uma função é chamada com menos argumentos do que o número de parâmetros definidos, os parâmetros ausentes recebem o valor undefined.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`function soma(a, b) {
+          <CodeHighlighter language="javascript" code={`function soma(a, b) {
   return a + b;
 }
 
@@ -382,17 +358,96 @@ console.log(resultado); // Saída: NaN (porque b é undefined)`}/>
         <p className="textCode">Ao tentar acessar uma propriedade que não existe em um objeto, o resultado é undefined.</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let objeto = { chave: 'valor' };
+          <CodeHighlighter language="javascript" code={`let objeto = { chave: 'valor' };
 console.log(objeto.outraChave); // Saída: undefined`}/>
         </div>
+        <h6>Variáveis Declaradas, mas Não Inicializadas:</h6>
+        <p className="textCode">Se uma variável é declarada, mas não inicializada, seu valor é undefined.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let valorNaoInicializado;
+console.log(valorNaoInicializado); // Saída: undefined`}/>
+        </div>
+        <h6>Uso com Estruturas Condicionais:</h6>
+        <p className="textCode">undefined é frequentemente usado em estruturas condicionais para verificar se uma variável foi inicializada ou se possui um valor específico.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let variavel;
 
-
-        </div>{/*-------Boolean-------*/}
+if (variavel === undefined) {
+  console.log("A variável não foi inicializada.");
+} else {
+  console.log("A variável foi inicializada com algum valor.");
+}`}/>
+        </div>
+        <p>É importante notar que undefined é diferente de null. undefined indica uma variável não inicializada ou ausência de valor, enquanto null é um valor atribuível e geralmente é usado para indicar a ausência intencional de um valor.</p>
+        </div>{/*-------indefined-------*/}
 
         {/*-------NULL-------*/}
         <div id="null">
           <h5>Null</h5>
+          <p>null é um valor especial que representa a intencional ausência de qualquer valor ou objeto. Diferentemente de undefined, que indica que uma variável foi declarada, mas ainda não foi inicializada, null é atribuível e geralmente é utilizado para indicar explicitamente que uma variável não possui valor ou que um objeto não aponta para nenhum local na memória.</p>
+          <h6>Atribuindo Valor null:</h6>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let variavelNula = null;
+console.log(variavelNula); // Saída: null`}/>
+        </div>
+        <p>Aqui, a variável variavelNula foi explicitamente atribuída o valor null.</p>
+        <h6>Retorno de Funções:</h6>
+        <p className="textCode">Funções podem retornar null para indicar que não há um valor significativo para retornar.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`function obterDados() {
+  // lógica para obter dados, mas algo deu errado
+  return null;
+}
+
+let dados = obterDados();
+console.log(dados); // Saída: null`}/>
+        </div>
+        <h6>Removendo Valor de Variáveis:</h6>
+        <p className="textCode">null pode ser usado para "limpar" o valor de uma variável.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let variavelParaLimpar = "algum valor";
+console.log(variavelParaLimpar); // Saída: algum valor
+
+variavelParaLimpar = null;
+console.log(variavelParaLimpar); // Saída: null`}/>
+        </div>
+        <h6>Comparação com undefined:</h6>
+        <p className="textCode">Enquanto undefined é frequentemente utilizado para indicar a falta de valor por falta de inicialização, null é utilizado para indicar explicitamente a ausência intencional de valor.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let naoInicializada;
+let valorNulo = null;
+
+console.log(naoInicializada); // Saída: undefined
+console.log(valorNulo);       // Saída: null`}/>
+        </div>
+        <h6>Verificação de Nulo:</h6>
+        <p className="textCode">Você pode usar operadores de comparação para verificar se uma variável é null.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let valorPossivelmenteNulo = /* algum valor ou null */;
+
+if (valorPossivelmenteNulo === null) {
+  console.log("A variável é nula.");
+} else {
+  console.log("A variável não é nula.");
+}`}/>
+        </div>
+        <h6>Objetos e null:</h6>
+        <p className="textCode">Quando você atribui null a uma variável que contém um objeto, você está indicando que a variável não aponta para nenhum objeto na memória.</p>
+        <div className="ide">
+          <Codeide/>
+          <CodeHighlighter language="javascript" code={`let objeto = { chave: 'valor' };
+console.log(objeto); // Saída: { chave: 'valor' }
+
+objeto = null;
+console.log(objeto); // Saída: null`}/>
+        </div>
         </div>{/*-------null-------*/}
         
         {/*-------SYMBOL-------*/}
@@ -478,30 +533,26 @@ console.log(objeto.outraChave); // Saída: undefined`}/>
         <p className="textCode">Criando um Array:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let frutas = ['maçã', 'banana', 'laranja'];
+          <CodeHighlighter language="javascript" code={`let frutas = ['maçã', 'banana', 'laranja'];
 let numeros = [1, 2, 3, 4, 5];
 let misto = [1, 'maçã', true, { tipo: 'fruta' }];`}/>
         </div>
         <p className="textCode">Acessando Elementos do Array:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`console.log(frutas[0]);  // 'maçã'
+          <CodeHighlighter language="javascript" code={`console.log(frutas[0]);  // 'maçã'
 console.log(numeros.length);  // 5`}/>
         </div>
         <p className="textCode">Modificando Elementos do Array:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`frutas[1] = 'uva';
+          <CodeHighlighter language="javascript" code={`frutas[1] = 'uva';
 frutas.push('abacaxi');  // Adiciona ao final do array`}/>
         </div>
         <p className="textCode">Métodos Úteis de Array:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let numeros = [3, 1, 4, 1, 5, 9];
+          <CodeHighlighter language="javascript" code={`let numeros = [3, 1, 4, 1, 5, 9];
 numeros.sort();  // Ordena os elementos
 numeros.reverse();  // Inverte a ordem dos elementos
 numeros.pop();  // Remove o último elemento
@@ -514,8 +565,7 @@ numeros.unshift(8);  // Adiciona no início`}/>
         <p className="textCode">Criando um Objeto:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let pessoa = {
+          <CodeHighlighter language="javascript" code={`let pessoa = {
       nome: 'João',
       idade: 25,
       solteiro: true,
@@ -528,30 +578,26 @@ numeros.unshift(8);  // Adiciona no início`}/>
         <p className="textCode">Acessando Propriedades do Objeto:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`console.log(pessoa.nome);  // 'João'
+          <CodeHighlighter language="javascript" code={`console.log(pessoa.nome);  // 'João'
 console.log(pessoa['idade']);  // 25
 console.log(pessoa.endereco.cidade);  // 'Cidade Exemplo'`}/>
         </div>
         <p className="textCode">Modificando Propriedades do Objeto:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`pessoa.nome = 'Carlos';
+          <CodeHighlighter language="javascript" code={`pessoa.nome = 'Carlos';
 pessoa['idade'] = 30;
 pessoa.endereco.cidade = 'Nova Cidade';`}/>
         </div>
         <p className="textCode">Adicionando Novas Propriedades:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`pessoa.profissao = 'Desenvolvedor';`}/>
+          <CodeHighlighter language="javascript" code={`pessoa.profissao = 'Desenvolvedor';`}/>
         </div>
         <p className="textCode">Métodos e Funções em Objetos:</p>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter language="javascript" 
-          code={`let calculadora = {
+          <CodeHighlighter language="javascript" code={`let calculadora = {
     soma: function(a, b) {
         return a + b;
     },
@@ -587,6 +633,7 @@ console.log(calculadora.subtrai(8, 3));  // 5`}/>
       <div id="manipulacaoDoDom">
         <h3 className="tituloh3">MANIPULACAO DO DOM</h3>
         <div className="line"></div>
+      </div>
       </div>
     </div>/*----container-----*/
   )

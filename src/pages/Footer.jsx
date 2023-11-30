@@ -8,15 +8,17 @@ const Footer = () => {
 
   return(
     <>
-      <div className=' meuFooter'>
-        <p>Todos direitos reservados</p>
-        <ul className='icons'>
-          <li><a href="https://github.com/lucasalves77"><TbBrandGithubFilled /></a></li>
-          <li><a href=""><RiInstagramFill /></a></li>
-          <li><a href="linkedin.com/in/lucas-alvesz"><FaLinkedinIn /></a></li>
-          <li><a href=""><FaTwitter /></a></li>
-        </ul>
-      </div>
+      <div className='container'>
+        <div className='meuFooter'>
+          <p>Todos direitos reservados</p>
+          <ul className='icons'>
+            <li><a href="https://github.com/lucasalves77"><TbBrandGithubFilled /></a></li>
+            <li><a href=""><RiInstagramFill /></a></li>
+            <li><a href="linkedin.com/in/lucas-alvesz"><FaLinkedinIn /></a></li>
+            <li><a href=""><FaTwitter /></a></li>
+          </ul>
+        </div>
+      </div> 
     </>
   )
 }

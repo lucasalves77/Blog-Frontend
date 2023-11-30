@@ -3,11 +3,6 @@ pre code.hljs {
   overflow-x: auto;
 }
 
-
-/*
- * Visual Studio 2015 dark style
- * Author: Nicolas LLOBERA <nllobera@gmail.com>
- */
 .hljs {
   background-color: transparent;
   color: #DCDCDC
@@ -75,9 +70,7 @@ pre code.hljs {
 .hljs-strong {
   font-weight: bold
 }
-/*.hljs-code {
-  font-family:'Monospace';
-}*/
+
 .hljs-bullet,
 .hljs-selector-tag,
 .hljs-selector-id,

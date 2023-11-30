@@ -18,4 +18,31 @@
   color: white;
 }
 
+.prefacio{
+  display: inline-block;
+  padding: 20px 0;
+  width: auto;
+}
 
+summary{
+  text-decoration: none;
+  color: #f78361;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+details{
+  display: flex;
+}
+
+details a{
+  color: white;
+  text-decoration: none;
+  margin-left: 45px;
+}
+
+details a:hover{
+  color: white;
+  text-decoration: underline;
+}

@@ -9,12 +9,19 @@ const Html = () => {
       <div className="container">
         <h1>Html</h1>
         <div className="prefacio">
-          <ul>
-            <li><a href="#variaveis">Estrutura basica</a></li>
-            <li><a href="#variaveis">Tipos de dados</a></li>
-            <li><a href="#variaveis">Operadores</a></li>
-            <li><a href="#variaveis">Condicionais</a></li>
-          </ul>
+          <h5>Conteudo</h5>
+          <details>
+            <summary>Estrutura basica</summary> 
+          </details>
+          <details>
+            <summary>Tipos de dados</summary>
+          </details>
+          <details>
+            <summary>Operadores</summary>
+          </details>
+          <details>
+            <summary>Condicionais</summary>
+          </details>   
         </div>
         <div>
           <h4>Estrutura basica</h4>
@@ -36,9 +43,7 @@ const Html = () => {
           </ul>
         <div className="ide">
           <Codeide/>
-          <CodeHighlighter 
-            language="html" 
-            code={`
+          <CodeHighlighter language="html" code={`
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -50,8 +55,7 @@ const Html = () => {
       <h1>Olá, Mundo!</h1>
       <p>Esta é uma página HTML básica.</p>
     </body>
-  </html>
-            `}
+  </html>`}
           />
         </div>
         </div>      

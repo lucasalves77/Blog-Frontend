@@ -10,10 +10,30 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.header-link:hover {
+  color: #f54b64;
 }
 
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 550px){
+  
+  h1 {
+    margin-top: 120px;
+  }
+
+  footer{
+    flex-direction: column-reverse;
+  }
+
+  .header{
+    display: none;
+  }
 }
